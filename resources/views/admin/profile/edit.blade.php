@@ -15,27 +15,29 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2" for="name">氏名</label>
+                        <div class="form-group row">
+                        <label class="col-md-2" for="nmae">氏名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ $profile_form->title }}">
+                            <textarea class="form-control" name="name" rows="10">{{ $profile_form->name }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
+                       <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                           <input type="text" class="form-control" name="name" value="{{ $profile_form->title }}">
+                            <textarea class="form-control" name="gender" rows="10">{{ $profile_form->gender }}</textarea>
                         </div>
                     </div>
-                    <div class="form-group row">
+                   <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="hobby" value="{{ $profile_form->title }}">
-                            </div>
+                            <textarea class="form-control" name="hobby" rows="10">{{ $profile_form->hobby }}</textarea>
+                        </div>
+                    </div>
                             <div class="form-group row">
-                        <label class="col-md-2" for="introduction">自己紹介欄</label>
+                        <label class="col-md-2" for="body">自己紹介</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="introduction" value="{{ $profile_form->title }}">
-                            </div>
+                            <textarea class="form-control" name="introduction" rows="10">{{ $profile_form->introduction }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
